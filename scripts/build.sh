@@ -21,5 +21,5 @@ for f in Translations/*; do
   for i in "${!translatedStrings[@]}"; do
     target=$(echo "$target" | sed s/${baseStrings[$i]}/${translatedStrings[$i]}/g);
   done
-  echo "$target" > result.$extension;
+  echo "$target" > $fileName.$extension;
 done
