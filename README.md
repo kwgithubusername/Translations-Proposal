@@ -19,12 +19,12 @@
 ```    
 3. Run appropriate script with dev-generated file containing all strings in step 1:
 ```
-    sh scripts/build.sh devFile featureName
+    sh scripts/build.sh featureName devFile targetDirectory
 ``` 
 
 ## Example
 ```
-sh scripts/build.sh ../exampleDevFile.json NewFeature/
+sh scripts/build.sh NewFeature ../exampleDevFile.json ../
 ```
 
 ## TODO:

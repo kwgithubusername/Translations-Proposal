@@ -1,5 +1,6 @@
-devFile=$1
-featureName=$2
+featureName=$1
+devFile=$2
+directory=$3
 
 IFS=$'
 '
@@ -22,6 +23,6 @@ for f in Translations/*; do
   done
   echo "Writing result to"
   echo $fileName.$extension;
-  echo "$target" > $fileName.$extension;
+  echo "$target" > $directory/$fileName.$extension;
 done
 
