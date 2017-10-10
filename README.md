@@ -9,17 +9,19 @@ Process:
     
     "This is a string with a general placeholder: %placeholder%"
 
-2. New strings are sent to translation service, ignoring all instances of %placeholder%:
+2. Dev adds strings in base language (e.g. English) to project.
+
+3. New strings are sent to translation service, ignoring all instances of %placeholder%:
 
     "Translated String 1"
     
     "Translated String 2 with %placeholder%"
     
-3. Run appropriate script with file containing all translations in base language (e.g. English):
+4. Run appropriate script with file containing all translations in base language (e.g. English):
 
     sh scripts/build.sh file-containing-all-english-translations
     
-4. Manually replace instances of %placeholder% with platform-appropriate specifier.
+5. Manually replace instances of %placeholder% with platform-appropriate specifier.
 
-5. Commit new files.
+6. Commit new files.
  
