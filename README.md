@@ -21,7 +21,3 @@ Process:
 ```
     sh scripts/build.sh devFile featureName
 ``` 
-4. Manually replace instances of %placeholder% with platform-appropriate specifier.
-
-5. Commit new files.
- 
