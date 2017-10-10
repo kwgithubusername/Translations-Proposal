@@ -12,8 +12,6 @@ baseStrings=( $(grep "." base) );
 
 devFileName=${devFile##*/};
 extension="${devFileName##*.}"
-echo "Writing to file type"
-echo $extension
 
 for f in Translations/*; do
   target="$(cat $devFile)";  
@@ -22,5 +20,8 @@ for f in Translations/*; do
   for i in "${!translatedStrings[@]}"; do
     target=$(echo "$target" | sed s/${baseStrings[$i]}/${translatedStrings[$i]}/g);
   done
+  echo "Writing result to"
+  echo $fileName.$extension;
   echo "$target" > $fileName.$extension;
 done
+
