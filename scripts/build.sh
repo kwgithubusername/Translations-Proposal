@@ -10,12 +10,13 @@ nl='
 cd $featureName/;
 baseStrings=( $(grep "." base) );
 
-target="$(cat $devFile)";
 devFileName=${devFile##*/};
 extension="${devFileName##*.}"
 echo "Writing to file type"
 echo $extension
+
 for f in Translations/*; do
+  target="$(cat $devFile)";  
   fileName=${f##*/};
   translatedStrings=( $(grep "." Translations/$fileName) );
   for i in "${!translatedStrings[@]}"; do
