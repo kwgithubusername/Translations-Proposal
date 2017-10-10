@@ -21,3 +21,7 @@ Process:
 ```
     sh scripts/build.sh devFile featureName
 ``` 
+
+TODO:
+1. Ignore %placeholder% during find and replace
+2. Save each language output as copy of original file type
