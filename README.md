@@ -19,7 +19,7 @@ Process:
 ```    
 3. Run appropriate script with dev-generated file containing all strings in step 1:
 ```
-    sh scripts/build.sh devFile
+    sh scripts/build.sh devFile featureName
 ``` 
 4. Manually replace instances of %placeholder% with platform-appropriate specifier.
 
