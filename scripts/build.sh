@@ -16,7 +16,7 @@ for f in Translations/*; do
   fileName=${f##*/};
   translatedStrings=( $(grep "." Translations/$fileName) );
   for i in "${!translatedStrings[@]}"; do
-    target=$(echo $target | sed s/${baseStrings[$i]}/${translatedStrings[$i]}/g);
+    target=$(echo "$target" | sed s/${baseStrings[$i]}/${translatedStrings[$i]}/g);
   done
   echo "$target";
 done

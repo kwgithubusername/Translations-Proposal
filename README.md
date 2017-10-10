@@ -1,6 +1,6 @@
 # Translations-Proposal
 
-Process:
+## Process
 1. New strings are added in the format:
 ```
     "This is a new string"
@@ -21,3 +21,8 @@ Process:
 ```
     sh scripts/build.sh devFile featureName
 ``` 
+
+## Example
+```
+sh scripts/build.sh ../exampleDevFile.json NewFeature/
+```
