@@ -18,9 +18,9 @@ Process:
     "Translated String 2 with %placeholder%"
 ```    
 3. Run appropriate script with file containing all strings in step 1:
-
+```
     sh scripts/build.sh file-containing-all-english-translations
-    
+``` 
 4. Manually replace instances of %placeholder% with platform-appropriate specifier.
 
 5. Commit new files.
