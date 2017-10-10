@@ -22,7 +22,12 @@
     sh scripts/build.sh devFile featureName
 ``` 
 
+<<<<<<< HEAD
 ## Example
 ```
 sh scripts/build.sh ../exampleDevFile.json NewFeature/
 ```
+
+## TODO:
+1. Ignore %placeholder% during find and replace
+2. Save each language output as copy of original file type
