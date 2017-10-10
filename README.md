@@ -17,7 +17,7 @@ Process:
     
     "Translated String 2 with %placeholder%"
     
-4. Run appropriate script with file containing all translations in base language (e.g. English):
+4. Run appropriate script with file containing all strings in step 1:
 
     sh scripts/build.sh file-containing-all-english-translations
     
