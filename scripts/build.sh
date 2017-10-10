@@ -7,7 +7,7 @@ IFS=$'
 nl='
 '
 
-cd ../$featureName/;
+cd $featureName/;
 baseStrings=( $(grep "." base) );
 
 target="$(cat $devFile)";
