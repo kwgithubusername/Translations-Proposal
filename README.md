@@ -22,7 +22,6 @@
     sh scripts/build.sh devFile featureName
 ``` 
 
-<<<<<<< HEAD
 ## Example
 ```
 sh scripts/build.sh ../exampleDevFile.json NewFeature/
