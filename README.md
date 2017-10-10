@@ -9,7 +9,7 @@ Process:
     
     "This is a string with a general placeholder: %placeholder%"
 
-2. Dev adds strings in base language (e.g. English) to project.
+2. Dev adds strings in base language (e.g. English) to project, replacing placeholders as appropriate.
 
 3. New strings are sent to translation service, ignoring all instances of %placeholder%:
 
