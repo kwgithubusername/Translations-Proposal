@@ -29,4 +29,3 @@ sh scripts/build.sh NewFeature ../exampleDevFile.json ../
 
 ## TODO:
 1. Ignore %placeholder% during find and replace
-2. Save each language output as copy of original file type
