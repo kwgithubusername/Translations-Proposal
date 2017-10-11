@@ -19,7 +19,15 @@ for f in Translations/*; do
   fileName=${f##*/};
   translatedStrings=( $(grep "." Translations/$fileName) );
   for i in "${!translatedStrings[@]}"; do
-    target=$(echo "$target" | sed s/${baseStrings[$i]}/${translatedStrings[$i]}/g);
+    if [ "$extension" == "xml" ]; then
+      baseString=$(sed -e 's/^"//' -e 's/"$//' <<<${baseStrings[$i]})
+      translatedString=$(sed -e 's/^"//' -e 's/"$//' <<<${translatedStrings[$i]})
+      target=$(echo "$target" | sed "s/\(<string name=.*\)\>$baseString/\1>$translatedString/g");
+    else
+      baseString=${baseStrings[$i]}
+      translatedString=${translatedStrings[$i]}
+      target=$(echo "$target" | sed s/$baseString/$translatedString/g);
+    fi
   done
   echo "Writing result to"
   echo $fileName.$extension;

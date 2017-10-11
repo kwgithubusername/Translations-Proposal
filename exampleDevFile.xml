@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="some_string">This is a new feature string</string>
+    <string name="some_other_string">This is another new feature string</string>
+</resources>
